@@ -6,6 +6,7 @@
   --midnight: #999;
   --box-shadow: 2px 2px 15px 2px #999;
   --mainText: "harabara, roboto, sans-serif", "roboto", "sans-serif";
+  --mobileText: "roboto";
 }
 
 /* GENERAL */
@@ -159,7 +160,7 @@ footer .logo {
     background-color: var(--bg-light);
     margin: 0;
     padding: 0;
-    font-family: var(--mainText);
+    font-family: var(--mobileText);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr 200px;
@@ -191,7 +192,7 @@ footer .logo {
   nav > .link > li,
   a {
     font-size: 12px;
-    font-family: var(--mainText);
+    font-family: var(--mobileText);
   }
   main {
     grid-row: 2;
@@ -224,7 +225,7 @@ footer .logo {
   .leftText > .mainText {
     font-size: 20px;
     text-align: center;
-    font-family: var(--mainText);
+    font-family: var(--mobileText);
   }
   .leftText > .btn {
     align-self: center;
