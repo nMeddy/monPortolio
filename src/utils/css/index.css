@@ -5,7 +5,7 @@
   --textWhite: #ffffff;
   --midnight: #999;
   --box-shadow: 2px 2px 15px 2px #999;
-  --mainText: "harabara";
+  --mainText: "harabara", "roboto", "sans-serif";
 }
 
 /* GENERAL */
