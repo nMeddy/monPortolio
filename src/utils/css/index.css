@@ -195,7 +195,7 @@ footer .logo {
   .feature {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 1rem;
     align-self: center;
     align-items: center;
@@ -208,6 +208,8 @@ footer .logo {
   }
   .leftText > .btn {
     align-self: center;
+    display: flex;
+    justify-content: center;
     padding: 20px;
     border-radius: 5rem;
     border: none;
