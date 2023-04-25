@@ -201,6 +201,7 @@ footer .logo {
     align-items: center;
   }
   .leftText {
+    margin: 1rem;
     display: flex;
     justify-content: center;
     text-align: center;
