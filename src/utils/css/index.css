@@ -155,6 +155,26 @@ footer .logo {
 }
 /* RESPONSIVE UI */
 @media screen and (max-width: 1000px) {
+  nav {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--bg-light);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+  .link > ul {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
   nav > .link > li,
   a {
     font-size: 12px;
