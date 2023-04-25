@@ -191,6 +191,7 @@ footer .logo {
   nav > .link > li,
   a {
     font-size: 12px;
+    font-family: var(--mainText);
   }
   main {
     grid-row: 2;
@@ -223,6 +224,7 @@ footer .logo {
   .leftText > .mainText {
     font-size: 20px;
     text-align: center;
+    font-family: var(--mainText);
   }
   .leftText > .btn {
     align-self: center;
@@ -233,6 +235,7 @@ footer .logo {
     border-radius: 5rem;
     border: none;
     background: var(--mainColor);
+    font-family: var(--mainText);
   }
   .RightImage {
     display: flex;
