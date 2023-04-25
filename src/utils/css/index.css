@@ -207,6 +207,10 @@ footer .logo {
     justify-content: center;
     text-align: center;
   }
+  .leftText> .mainText {
+    font-size: 20px;
+    text-align: center;
+  }
   .leftText > .btn {
     align-self: center;
     display: flex;
