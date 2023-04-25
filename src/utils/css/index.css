@@ -183,7 +183,7 @@ footer .logo {
     grid-row: 2;
     display: flex;
     justify-content: center;
-    height: 80vh;
+    
   }
   .mainContainer {
     display: flex;
