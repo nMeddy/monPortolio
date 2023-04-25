@@ -183,7 +183,7 @@ footer .logo {
     grid-row: 2;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
   }
   .mainContainer {
     display: flex;
@@ -199,7 +199,7 @@ footer .logo {
     gap: 1rem;
     align-self: center;
     align-items: center;
-    height: 100%;
+    height: 90%;
   }
   .leftText {
     margin: 1rem;
