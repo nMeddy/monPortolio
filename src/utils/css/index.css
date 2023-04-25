@@ -196,6 +196,7 @@ footer .logo {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
+    gap: 1rem;
     align-self: center;
     align-items: center;
   }
@@ -214,5 +215,6 @@ footer .logo {
   .RightImage {
     align-self: center;
     align-items: center;
+    margin: 1rem;
   }
 }
