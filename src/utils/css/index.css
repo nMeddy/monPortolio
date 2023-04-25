@@ -1,0 +1,197 @@
+:root {
+  --textColo: #242424;
+  --mainColor: #eb7117;
+  --bg-light: #ccc;
+  --textWhite: #ffffff;
+  --midnight: #999;
+  --box-shadow: 2px 2px 15px 2px #999;
+  --mainText: "harabara";
+}
+
+/* GENERAL */
+body {
+  background-color: var(--bg-light);
+  margin: 0;
+  padding: 0;
+  font-family: var(--mainText);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 200px;
+  grid-template-areas: "header main footer";
+  height: 100vh;
+  width: 100%;
+  color: var(--textColo);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--textColo);
+}
+a:hover {
+  color: var(--midnight);
+  border-bottom: var(--mainColor) 1px solid;
+}
+/* ---------NavBar--------- */
+nav {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--bg-light);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  width: 90%;
+}
+.linkLogo:hover {
+  border: none;
+}
+.logo {
+  background-image: url("../../../assets/mtech1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 13vh;
+  width: 13vh;
+}
+.link > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.burger {
+  display: none;
+}
+
+/* --------Main--------------- */
+main {
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  width: 100%;
+  height: 50vh;
+  font-family: harabara, sans-serif;
+}
+.leftText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.leftText > .btn {
+  align-self: flex-start;
+  padding: 20px;
+  border-radius: 5rem;
+  border: none;
+  background: var(--mainColor);
+}
+.leftText > .btn:hover {
+  background: var(--mainColor);
+}
+.leftText > .btn > a {
+  color: var(--bg-light);
+  font-family: var(--mainText);
+  font-size: 18px;
+}
+.RightImage {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.do-1 {
+  background: #eb7117;
+  height: 10vh;
+  width: 10vh;
+}
+/* -------Footer------------ */
+footer {
+  grid-row: 3;
+  background-color: var(--textColo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .logo {
+  height: 20vh;
+  width: 20vh;
+}
+/* RESPONSIVE UI */
+@media screen and (max-width: 1000px) {
+  nav > .link > li,
+  a {
+    font-size: 12px;
+  }
+  main {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+  }
+  .mainContainer {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+  }
+  .leftText {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .leftText > .btn {
+    align-self: center;
+    padding: 20px;
+    border-radius: 5rem;
+    border: none;
+    background: var(--mainColor);
+  }
+  .RightImage {
+    align-self: center;
+    align-items: center;
+  }
+}
